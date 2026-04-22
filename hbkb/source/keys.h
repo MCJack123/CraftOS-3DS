@@ -1,0 +1,89 @@
+enum Keys
+{
+	HBKB_KEY_NONE = 0,
+
+	HBKB_KEY_Q = 16,
+	HBKB_KEY_W = 17,
+	HBKB_KEY_E = 18,
+	HBKB_KEY_R = 19,
+	HBKB_KEY_T = 20,
+	HBKB_KEY_Y = 21,
+	HBKB_KEY_U = 22,
+	HBKB_KEY_I = 23,
+	HBKB_KEY_O = 24,
+	HBKB_KEY_P = 25,
+	HBKB_KEY_A = 30,
+	HBKB_KEY_S = 31,
+	HBKB_KEY_D = 32,
+	HBKB_KEY_F = 33,
+	HBKB_KEY_G = 34,
+	HBKB_KEY_H = 35,
+	HBKB_KEY_J = 36,
+	HBKB_KEY_K = 37,
+	HBKB_KEY_L = 38,
+	HBKB_KEY_Z = 44,
+	HBKB_KEY_X = 45,
+	HBKB_KEY_C = 46,
+	HBKB_KEY_V = 47,
+	HBKB_KEY_B = 48,
+	HBKB_KEY_N = 49,
+	HBKB_KEY_M = 50,
+
+	HBKB_KEY_1 = 2,
+	HBKB_KEY_2 = 3,
+	HBKB_KEY_3 = 4,
+	HBKB_KEY_4 = 5,
+	HBKB_KEY_5 = 6,
+	HBKB_KEY_6 = 7,
+	HBKB_KEY_7 = 8,
+	HBKB_KEY_8 = 9,
+	HBKB_KEY_9 = 10,
+	HBKB_KEY_0 = 11,
+
+	HBKB_KEY_SPACE = 57,
+
+	// Special - Row 0
+	HBKB_KEY_SPECIAL_A = 2 | 0x80, // !
+	HBKB_KEY_SPECIAL_B = 40 | 0x80, // "
+	HBKB_KEY_SPECIAL_C = 0, // §
+	HBKB_KEY_SPECIAL_D = 5 | 0x80, // $
+	HBKB_KEY_SPECIAL_E = 6 | 0x80, // %
+	HBKB_KEY_SPECIAL_F = 8 | 0x80, // &
+	HBKB_KEY_SPECIAL_G = 53, // /
+	HBKB_KEY_SPECIAL_H = 9 | 0x80, // (
+	HBKB_KEY_SPECIAL_I = 10 | 0x80, // )
+	HBKB_KEY_SPECIAL_J = 53 | 0x80, // ?
+
+	// Special - Row 1
+	HBKB_KEY_SPECIAL_K = 9 | 0x80, // *
+	HBKB_KEY_SPECIAL_L = 40, // '
+	HBKB_KEY_SPECIAL_M = 51 | 0x80, // <
+	HBKB_KEY_SPECIAL_N = 52 | 0x80, // >
+	HBKB_KEY_SPECIAL_O = 12 | 0x80, // +
+	HBKB_KEY_SPECIAL_P = 26, // [
+	HBKB_KEY_SPECIAL_Q = 27, // ]
+	HBKB_KEY_SPECIAL_R = 26 | 0x80, // {
+	HBKB_KEY_SPECIAL_S = 27 | 0x80, // }
+
+	// Special - Row 2
+	HBKB_KEY_SPECIAL_T = 51, // ,
+	HBKB_KEY_SPECIAL_U = 39, // ;
+	HBKB_KEY_SPECIAL_V = 52, // .
+	HBKB_KEY_SPECIAL_W = 39 | 0x80, // :
+	HBKB_KEY_SPECIAL_X = 12, // -
+	HBKB_KEY_SPECIAL_Y = 12 | 0x80, // _
+	HBKB_KEY_SPECIAL_Z = 13, // =
+
+	HBKB_KEY_ENTER = 28,
+	HBKB_KEY_BACK = 14,
+	HBKB_KEY_SHIFT = 42,
+	HBKB_KEY_CAPS = 94,
+	HBKB_KEY_CHANGEKEYS = 95,
+	HBKB_KEY_CANCEL = 29
+};
+
+enum KeyboadStates
+{
+	STATE_ABC = 0,
+	STATE_SPECIAL = 1,
+};
