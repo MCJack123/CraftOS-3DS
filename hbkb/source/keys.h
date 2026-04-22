@@ -50,8 +50,8 @@ enum Keys
 	HBKB_KEY_SPECIAL_E = 6 | 0x80, // %
 	HBKB_KEY_SPECIAL_F = 8 | 0x80, // &
 	HBKB_KEY_SPECIAL_G = 53, // /
-	HBKB_KEY_SPECIAL_H = 9 | 0x80, // (
-	HBKB_KEY_SPECIAL_I = 10 | 0x80, // )
+	HBKB_KEY_SPECIAL_H = 10 | 0x80, // (
+	HBKB_KEY_SPECIAL_I = 11 | 0x80, // )
 	HBKB_KEY_SPECIAL_J = 53 | 0x80, // ?
 
 	// Special - Row 1
