@@ -51,14 +51,7 @@ HW_Controls sControls;
 void HB_Keyboard::KeyInteraction(u8 &Key)
 {
 	// Change Shift State
-	if (Key == HBKB_KEY_SHIFT) // Shift Management
-	{
-		if (isShift)
-			isShift = false;
-		else
-			isShift = true;
-	}
-	else if (Key == HBKB_KEY_CAPS) // Caps Management
+	if (Key == HBKB_KEY_SHIFT) // Caps Management
 	{
 		if (isCaps)
 			isCaps = false;
@@ -72,10 +65,7 @@ void HB_Keyboard::KeyInteraction(u8 &Key)
 		else
 			KeyboardState = STATE_ABC; // To ABC
 	}
-	else if (Key != HBKB_KEY_ENTER && Key != HBKB_KEY_CANCEL) // Not Enter or Cancel
-		ChangeString(Key); // Back Key is handled here.
-	else
-		ChangeString(Key); // Back Key is still handled here.
+	ChangeString(Key); // Back Key is still handled here.
 
 	if (isShift && Key != HBKB_KEY_NONE && Key != HBKB_KEY_SHIFT) // Change Shift if normal Key was Pressed with Shift
 		isShift = false;
